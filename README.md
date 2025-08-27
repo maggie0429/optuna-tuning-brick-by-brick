@@ -6,6 +6,20 @@ This repository contains experiments for **hyperparameter optimization** in smar
 Smart building datasets are highly imbalanced and multi-label in nature. Baseline models often underperform due to suboptimal hyperparameters.  
 This project demonstrates how **Optuna-based tuning** can improve classification performance beyond strong baselines.
 
+## Experiments
+
+### 1. Optuna Hyperparameter Tuning ✅
+- Based on CatBoost baseline from BrickMIR.
+- Improved macro-F1 from **0.5079 → 0.5085**.
+- Demonstrates that automated search (TPESampler + MedianPruner) is more effective than manual tuning.
+
+### 2. Alternative Tree-based Models（classifierchain） ❌
+- Replaced CatBoost with RandomForest / ExtraTrees to test robustness.  
+- Best macro-F1 achieved: **0.477**, significantly worse than baseline.  
+- Shows the importance of imbalance-aware boosting methods in multi-label BMS tasks.  
+- Notebook: `notebooks/failed_trials.ipynb`
+
+
 ## Methods
 - Dataset: **BrickMIR 2024** (NeurIPS Brick by Brick Challenge)
 - Baseline: CatBoost classifier (from official winning baseline)
