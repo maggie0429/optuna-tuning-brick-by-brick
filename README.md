@@ -40,3 +40,10 @@ This project demonstrates how **Optuna-based tuning** can improve classification
 | Optuna tuned | 0.509    |
 
 ## Repository Structure
+
+## Key Insights
+
+- Hyperparameter tuning (Optuna) improved macro-F1 slightly, but gains were marginal.  
+- Negative results from RandomForest/ExtraTrees confirmed that boosting remains superior for BMS data.  
+- **Main takeaway:** The bottleneck is not the model itself, but **feature representation**.  
+  Future work should focus on improved time-series embeddings, ontology-guided features, or representation learning approaches.
