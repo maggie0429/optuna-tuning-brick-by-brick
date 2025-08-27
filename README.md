@@ -1,6 +1,6 @@
 # Optuna-Tuning for Smart Building Classification
 
-This repository contains experiments for **hyperparameter optimization** in smart building sensor classification, using the [Brick by Brick 2024 Challenge](https://brickbybrickchallenge.com/) dataset.
+This repository contains experiments for **hyperparameter optimization** in smart building sensor classification, using the [Brick by Brick 2024 Challenge](https://www.aicrowd.com/challenges/brick-by-brick-2024) dataset.
 
 ## 🎯 Motivation
 Smart building datasets are highly imbalanced and multi-label in nature. Baseline models often underperform due to suboptimal hyperparameters.  
